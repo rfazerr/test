@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Nouveau vlog</h2>
+<form method="POST">
+    <label>Titre</label>
+    <input type="text" name="title" required>
+    <label>Contenu</label>
+    <textarea name="content" rows="10" required></textarea>
+    <button class="btn" type="submit">Publier</button>
+</form>
+{% endblock %}

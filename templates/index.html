@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Derniers vlogs</h2>
+<ul class="post-list">
+    {% for id, title in posts %}
+        <li><a href="/post/{{ id }}">{{ title }}</a></li>
+    {% else %}
+        <p>Aucun vlog pour le moment.</p>
+    {% endfor %}
+</ul>
+{% endblock %}
